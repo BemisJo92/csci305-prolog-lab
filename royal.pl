@@ -132,6 +132,7 @@ female('Karena').
 female('Louise').
 female('Blaise').
 female('Kathy').
+female('FakeSister').
 
 born('Andy', 1996).
 born('Connor', 2001).
@@ -143,9 +144,9 @@ married('Nathan', 'Louise').
 married('Pete', 'Blaise').
 married('Roger', 'Kathy').
 
-parent('Roger', 'Blaise').
+parent('Roger', 'Pete').
 parent('Roger', 'Karena').
-parent('Kathy', 'Blaise').
+parent('Kathy', 'Pete').
 parent('Kathy', 'Karena').
 parent('Nathan', 'John').
 parent('Nathan', 'Joel').
@@ -153,5 +154,7 @@ parent('Louise', 'John').
 parent('Louise', 'Joel').
 parent('John', 'Andy').
 parent('John', 'Connor').
+parent('John', 'FakeSister').
 parent('Karena', 'Andy').
 parent('Karena', 'Connor').
+parent('Karena', 'FakeSister').

@@ -40,11 +40,36 @@ sister(C1, C2) :-
 
 uncle(U1, C1) :-
   parent(P1, C1),
-  brother(U1, P1),
-  male(U1).
+  brother(U1, P1).
+  %male(U1).
 
 uncle(U1, C1) :-
   parent(P1, C1),
   sibling(P1, S1),
   married(U1, S1),
   male(U1).
+
+aunt(A1, C1) :-
+  parent(P1, C1),
+  sister(A1, P1).
+  %female(A1).
+
+aunt(A1, C1) :-
+  parent(P1, C1),
+  sibling(P1, S1),
+  married(S1, A1),
+  female(A1).
+
+grandparent(G1, C1) :-
+  parent(P1, C1),
+  parent(G1, P1).
+
+grandfather(G1, C1) :-
+  grandparent(G1, C1),
+  male(G1).
+
+grandmother(G1, C1) :-
+  grandparent(G1, C1),
+  female(G1).
+
+%grandchild(C1, G1)
