@@ -118,3 +118,40 @@ parent('Antony Armstrong-Jones', 'Viscount Linley').
 parent('Princess Margaret', 'Viscount Linley').
 parent('Antony Armstrong-Jones', 'Lady Sarah Chatto').
 parent('Princess Margaret', 'Lady Sarah Chatto').
+
+% My Family
+male('John').
+male('Connor').
+male('Andy').
+male('Joel').
+male('Nathan').
+male('Pete').
+male('Roger').
+
+female('Karena').
+female('Louise').
+female('Blaise').
+female('Kathy').
+
+born('Andy', 1996).
+born('Connor', 2001).
+born('John', 1973).
+born('Karena', 1968).
+
+married('John', 'Karena').
+married('Nathan', 'Louise').
+married('Pete', 'Blaise').
+married('Roger', 'Kathy').
+
+parent('Roger', 'Blaise').
+parent('Roger', 'Karena').
+parent('Kathy', 'Blaise').
+parent('Kathy', 'Karena').
+parent('Nathan', 'John').
+parent('Nathan', 'Joel').
+parent('Louise', 'John').
+parent('Louise', 'Joel').
+parent('John', 'Andy').
+parent('John', 'Connor').
+parent('Karena', 'Andy').
+parent('Karena', 'Connor').
