@@ -1,0 +1,97 @@
+John Bemis
+Prolog Lab
+4/27/18
+
+1. What is the result of query: ?- father(X, 'Queen Elizabeth II').?
+	X = 'King George VI' ;
+	
+2. What is the result of query: ?- grandmother(X, 'Queen Elizabeth II').?
+	X = 'Queen Mary' ;
+	
+3. What is the result of query: ?- grandfather(X, 'Queen Elizabeth II').?
+	X = 'King George V' ;
+
+4. What is the result of query: ?- grandparent(X, 'Queen Elizabeth II').?
+	X = 'King George V' ;
+	X = 'Queen Mary' ;
+	
+5. What is the result of query: ?- grandparent('Queen Elizabeth II', X).?
+	X = 'Prince William' ;
+	X = 'Prince Henry' ;
+	
+6. What is the result of query: ?- sibling(X, 'Queen Elizabeth II').?
+	X = 'Princess Margaret' ;
+	
+7. What is the result of query: ?- son(X, 'Queen Elizabeth II').?
+	X = 'Prince Charles' ;
+	X = 'Prince Andrew' ;
+	X = 'Prince Edward' ;
+	
+8. What is the result of query: ?- daughter(X, 'Queen Elizabeth II').?
+	X = 'Princess Anne' ;
+	
+9. What is the result of query: ?- aunt(X, 'Lady Diana Spencer').?
+	False
+	
+10. What is the result of query: ?- spouse(X, 'Prince William').?
+	X = 'Catherine Middleton' ;
+	
+11. What is the result of query: ?- ancestor(X, 'Prince Henry').?
+	X = 'Prince Charles' ;
+	X = 'Lady Diana Spencer' ;
+	X = 'Queen Elizabeth II' ;
+	X = 'Prince Philip' ;
+	X = 'King George VI' ;
+	X = 'Lady Elizabeth Bowes-Lyon' ;
+	X = 'King George V' ;
+	X = 'Queen Mary' ;
+	X = 'King Edward VII' ;
+	X = 'Princess Alexandra of Denmark' ;
+	X = 'Prince Albert' ;
+	X = 'Queen Victoria' ;
+	
+12. What is the result of query: ?- descendant('Queen Victoria', Y).?
+	False
+	
+13. What is the result of query: ?- older('Prince Henry', 'Prince William').?
+	False
+	
+14. What is the result of query: ?- older(X, 'Queen Elizabeth II').?
+	X = 'Lady Elizabeth Bowes-Lyon' ;
+	X = 'Queen Victoria' ;
+	X = 'Princess Alexandra of Denmark' ;
+	X = 'Queen Mary' ;
+	X = 'Mrs Simpson' ;
+	X = 'Prince Albert' ;
+	X = 'King Edward VII' ;
+	X = 'King George V' ;
+	X = 'King Edward VIII' ;
+	X = 'King George VI' ;
+	X = 'Prince Philip' ;
+	
+15. What is the result of query: ?- regentWhenBorn(X, 'Queen Elizabeth II').?
+	X = 'King George V' ;
+	
+16. Name something you like about Prolog. Explain.
+	I like that Prolog is a lot different than most of the languages we have worked with before. I have never coded in a language like Prolog before, so it was cool to see how a language like this worked. 
+
+17. Name something you dislike about Prolog. Explain.
+	The only thing I didn't like about Prolog, which was minor mind you, was that every time you edited the file, you had to reload it in the interpreter. I looked up maybe a keyboard shortcut to do that, but didn't put too much effort into it. There's probably a way. 
+	
+18. Did you enjoy this lab? Which aspects did you like and/or dislike?
+	I did enjoy this lab! I thought it was a good introduction to prolog, but I wish it went a little deeper and had us create some more complicated rules like in the adventure game in-class example. 
+
+19. Approximately how many hours did you spend on this lab?
+	I spent about 5 hours on this lab.
+	
+20. Do you think you will use Prolog again? For which type(s) or project(s)?
+	I don't think I will ever use Prolog again, not because I didn't like it but because I would have no idea what to use it for. 
+	
+Extra Credit:
+1. What is the result of query: ?- cousin(X, 'Prince Charles').
+	X = 'Viscount Linley' ;
+	X = 'Lady Sarah Chatto' ;
+	
+2. What is the result of query: ?- cousin('Prince Charles', X).
+	X = 'Viscount Linley' ;
+	X = 'Lady Sarah Chatto' ;
